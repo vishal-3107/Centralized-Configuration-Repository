@@ -1,5 +1,5 @@
-# This repository serves as the centralized configuration source for microservices using Spring Cloud Config Server. 
-# It contains environment-specific configuration files that the Config Server will read and serve to client applications.
+## This repository serves as the centralized configuration source for microservices using Spring Cloud Config Server. 
+## It contains environment-specific configuration files that the Config Server will read and serve to client applications.
 
 ## 📌 Structure
     config-repo/
@@ -9,9 +9,9 @@
 
 ## 🚀 Usage
 
-# 1️⃣ Spring Cloud Config Server Setup
+## 1️⃣ Spring Cloud Config Server Setup
 
-# To connect this repository with the Spring Cloud Config Server, update your application.yml in the Config Server project:
+## To connect this repository with the Spring Cloud Config Server, update your application.yml in the Config Server project:
     server:
     port: 8888
 
@@ -23,7 +23,7 @@
                         uri: https://github.com/your-username/central-config-repo
                         clone-on-start: true
 
-# 2️⃣ Fetching Configurations
+## 2️⃣ Fetching Configurations
 
     Once the Config Server is running, microservices can fetch their configurations dynamically.
     ->  Fetch Default Configuration:
@@ -33,7 +33,7 @@
     ->  Fetch QA Environment Configuration:
         http://localhost:8888/limits-service/qa
 
-# 3️⃣ Spring Boot Client Configuration
+## 3️⃣ Spring Boot Client Configuration
 
     Each microservice should include the following in its bootstrap.yml:
     spring:
